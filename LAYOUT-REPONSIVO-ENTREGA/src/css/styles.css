@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+h1 {
+    text-align: left;
+    background-color: #4242ff;
+    padding: 30px;
+    padding-left: 50px;
+    color: white;
+}
+
+img {
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.col-3 {
+    flex: 1;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.col-6 {
+    flex: 2;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.col-s-3 {
+    flex: 1;
+    max-width: 30%;
+    padding: 10px;
+}
+
+.col-s-9 {
+    flex: 3;
+    max-width: 70%;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.title-city {
+    color: #4242ff;
+}
+
+.menu li {
+    border-radius: 10px;
+    background-color: #4242ff;
+    color: white;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li:hover {
+    background-color: #1313ba;
+    color: rgb(255, 255, 255);
+}
+
+.main h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.main p {
+    line-height: 2.5;
+    font-size: 16px;
+    color: #555;
+}
+
+.aside {
+    background-color: #4242ff; 
+    color: white;               
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aside h2 {
+    line-height: 1.5;
+    font-size: 18px;
+    color: white;
+}
+
+.aside p {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #f4f4f4;
+}
+
+.aside-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #4242ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .col-3, .col-6 {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .menu ul {
+        text-align: center;
+    }
+
+    footer {
+        position: static;
+    }
+
+    body {
+        padding-bottom: 50px; /* Adiciona espaço extra para evitar sobreposição */
+    }
+}
